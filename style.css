@@ -1,0 +1,355 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+}
+
+.intro{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+.quotes{
+    margin-left: 63%;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  z-index: 2;
+  margin-top: -40%;
+  font-family: Lucida Console;
+  font-size: 40px;
+}
+span{
+    opacity:0;
+    transition: all 3s ease;
+   
+}
+span.fade{
+    opacity: 1;
+   
+}
+.glow-on-hover {
+  width: 150px;
+  height: 80px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: absolute;
+  z-index: 0;
+  border-radius: 50%;
+  top:55%;
+  right: 10%;
+font-family: Lucida Console;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+
+/* second scene */
+.ChooseEnemyPage{
+    height: 100vh;
+    width: 100vw;
+    margin-top: -49.6%;
+    position: absolute;
+    z-index: 5;
+    background-color: rgb(0, 0, 0);
+}
+.SecondIMAGES{
+   border-radius: 50%; 
+   border: none;
+  box-shadow: 0px 0px 50px rgb(109, 108, 108);
+  margin-top: 18%;
+  margin-left: 5%;
+  cursor: pointer;
+}
+.SecondIMAGES:hover{
+    box-shadow: 10px 10px 35px 50px  #2e77a8;
+  
+}
+.container {
+  position: relative;
+  width: 19%;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 40px;
+}
+
+
+.overlay {
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 50%;
+  background-color: #000000b6;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  height: 50%;
+  left: 10px;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+/* secod page button hover*/
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+.box-2 { 
+    position: absolute;
+    z-index: 6;
+    background-color: #3C3C3C;
+    margin-left: 80%;
+    margin-top: -37%;
+ }
+
+
+.btn {
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  width: 250px;
+  cursor: pointer;
+}
+
+
+  
+/* BUTTON TWO*/
+.btn-two {
+  color: #FFF;
+  transition: all 0.5s;
+  position: absolute; 
+  z-index: 12;
+}
+
+.btn-two::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 12;
+  transition: all 0.5s;
+  border: 1px solid rgba(255,255,255,0.2);
+  background-color: rgba(255,255,255,0.1);
+}
+.btn-two::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 12;
+  transition: all 0.5s;
+  border: 1px solid rgba(255,255,255,0.2);
+  background-color: rgba(255,255,255,0.1);
+}
+.btn-two:hover::before {
+  transform: rotate(-45deg);
+  background-color: rgba(255,255,255,0);
+}
+.btn-two:hover::after {
+  transform: rotate(45deg);
+  background-color: rgba(255,255,255,0);
+}
+
+/* third page */
+.Fight{
+    height: 100vh;
+    width: 100vw;
+    margin-top: -49.7%;
+    position: absolute;
+    z-index: 7;
+    background-image: url(./images/space.jpg);
+}
+.score1{
+    margin-left: 150px;
+}
+.score2{
+    margin-left: 800px; 
+    transform: rotateY(180deg);
+}
+.scor1 {
+color: rgb(0, 0, 0);
+font-size: 30px;
+position: absolute;
+margin-left: 230px;
+margin-top: -8%;
+}
+.scor2 {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    position: absolute;
+    margin-left: 1230px;
+    margin-top: -8%;
+    }
+    .crossed{
+      width: 500px;
+      height: 400px;
+      opacity: 0.5;
+      border-radius: 60px;
+      margin-left: 30%;
+      margin-bottom: 5%;
+    }
+    .img1{
+      opacity: 0.5;
+      border-radius: 50px; 
+      margin-left: -55%;
+      margin-top: -1%;
+      pointer-events: none;
+    }
+    .left1{
+      opacity: 0.5;
+      border-radius: 50px; 
+      
+      margin-top: -1%;
+      pointer-events: none;
+      margin-left: 45%;
+    }
+    .img2{
+      opacity: 0.5;
+      border-bottom-left-radius: 700px;
+      border-bottom-right-radius: 700px;
+      border-top-left-radius:50px ;
+      border-top-right-radius:50px ;
+      margin-left: -18%;
+      margin-top: 0%;
+      position: absolute;
+      pointer-events: none;
+    }
+    .left2{
+      opacity: 0.5;
+      border-bottom-left-radius: 700px;
+      border-bottom-right-radius: 700px;
+      border-top-left-radius:50px ;
+      border-top-right-radius:50px ;
+     
+      margin-top: 0%;
+      position: absolute;
+      pointer-events: none;
+      margin-left: -15%;
+    }
+    .img3{
+      opacity: 0.6;
+     border-radius: 40%;
+      margin-left: -18%;
+      margin-top: 0%;
+      position: absolute;
+      pointer-events: none;
+    }
+    .left3{
+      opacity: 0.6;
+      border-radius: 40%;
+      
+       margin-top: 0%;
+       position: absolute;
+       pointer-events: none;
+      margin-left: -15%;
+    }
+    .img4{
+      opacity: 0.6;
+     border-radius: 40%;
+      margin-left: -18%;
+      margin-top: -2%;
+      position: absolute;
+      pointer-events: none;
+    }
+    .left4{
+      opacity: 0.6;
+      border-radius: 40%;
+      
+       margin-top: -2%;
+       position: absolute;
+       pointer-events: none;
+      margin-left: -15%;
+    }
+
+    .health{
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      position: absolute;
+      margin-left: -87.5%;
+      margin-top: 20%;
+      border:none;
+      background-color: rgb(57, 189, 24);
+      box-shadow: 0px 0px 20px 10px rgb(57, 189, 24) ;
+      cursor: pointer;
+    }
+    .saber{
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      position: absolute;
+      margin-left: -87.5%;
+      margin-top: 27%;
+      border:none;
+      background-color: rgb(219, 8, 8);
+      box-shadow: 0px 0px 20px 10px rgb(172, 50, 13) ;
+      cursor: pointer;
+    }
+ 

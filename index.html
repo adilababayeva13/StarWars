@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarWARS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+</head>
+<body>
+   
+    <div class="intro"  style="opacity: 1; pointer-events: all;" >
+        <img src="./images/darth.jpg" alt="" class="">
+    
+        <h1 class="quotes">IF YOU'RE NOT WITH ME,THEN YOU'RE MY ENEMY!</h1>
+
+     
+
+<button class="glow-on-hover" type="button" id="introBTN">JOIN THE  DARK SIDE</button>
+
+
+    </div>
+
+    
+    
+    <div style="opacity: 0; pointer-events: none;" class="ChooseEnemyPage">
+
+        <div class="container">
+            <img src="./images/ObiWan.jpg" alt="" class="SecondIMAGES " id="1">
+            <div class="overlay">
+              <div class="text">Obi-Wan Kenobi  <br>
+                Health : 120  <br>
+                 
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <img src="./images/darthM.jpg" alt="" class="SecondIMAGES" id="2">
+            <div class="overlay">
+              <div class="text">Darth Maul  <br>
+                Health : 180  <br>
+                </div>
+            </div>
+          </div>
+          <div class="container">
+            <img src="./images/DarthS.jpg" alt="" class="SecondIMAGES" id="3">
+            <div class="overlay">
+              <div class="text">Darth Vader <br>
+                 Health : 150  <br>
+               </div>
+            </div>
+          </div>
+          <div class="container">
+            <img src="./images/Luke.jpeg" alt="" class="SecondIMAGES" id="4">
+            <div class="overlay">
+              <div class="text">Luke Skywalker <br>
+                Health : 100  <br>
+               </div>
+            </div>
+          </div>
+       
+        
+     
+        <h1 id="secondText" style="color: rgb(65, 143, 206); margin-top: 90px; margin-left: 20px; font-family: Lucida Console;">PLEASE CHOOSE YOUR CHARACTER...</h1>
+       
+        <div class="box-2"style="opacity: 0; pointer-events: none;" >
+            <div  class="btn btn-two">
+              PLAY
+            </div>
+          </div>
+</div>
+
+
+
+<div style="opacity: 0; pointer-events:none;"  class="Fight">
+    <img class="score1" src="https://img.icons8.com/color/200/000000/space-shuttle.png"/>
+    <img class="score2" src="https://img.icons8.com/color/200/000000/space-shuttle.png"/>
+    <div class="scor1">100</div>
+    <div class="scor2">100</div>
+
+    <audio id="myAudio">
+       <source src="./audio/song.mp3" type="audio/mpeg">
+     
+     </audio>
+     <audio id="clash">
+       
+        <source src="./audio/clash.mp3" type="audio/mpeg">
+      </audio>
+
+      <audio id="over">
+       
+        <source src="./audio/gameOver.mp3" type="audio/mpeg">
+      </audio>
+
+      <audio id="winner">
+       
+        <source src="./audio/winner.mp3" type="audio/mpeg">
+      </audio>
+     <button class="health">+100 ♡<br>(x1)</button>
+     <button id="saber" class="saber">Attack</button>
+    
+     <img style="opacity: 0; " src="./images/crossedS.jpg" alt="" class="crossed">
+    
+     <img style="opacity: 0; " src="./images/obi2.jpg" alt="" class="img1">
+     <img style="opacity: 0;" src="./images/maul2.jpg" alt="" class="img2">
+     <img  style="opacity: 0;" src="./images/DarthS.jpg" alt="" class="img3">
+     <img style="opacity: 0;" src="./images/luke2.jpg" alt="" class="img4">
+
+     
+     <img style="opacity: 0; " src="./images/obi2.jpg" alt="" class=" left1">
+     <img style="opacity: 0;" src="./images/maul2.jpg" alt="" class=" left2">
+     <img  style="opacity: 0;" src="./images/DarthS.jpg" alt="" class=" left3">
+     <img style="opacity: 0;" src="./images/luke2.jpg" alt="" class="left4">
+</div>
+
+
+
+    
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
