@@ -258,6 +258,7 @@ $("#saber").on("click", function(){
        }
 
        if( newScore2 <= 0){
+        $(".scor2").html("0"); 
            if(a1 ==1 && a2 ==1 && a3 ==1 && a4 ==1 ){
           
             var x = document.getElementById("myAudio"); 
@@ -416,6 +417,7 @@ $("#saber").on("click", function(){
     }
 
     if( newScore2 <= 0){
+        $(".scor2").html("0"); 
         if(a1 ==1 && a2 ==1 && a3 ==1 && a4 ==1 ){
             var x = document.getElementById("myAudio"); 
             x.pause();
