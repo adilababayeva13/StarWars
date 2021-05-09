@@ -92,7 +92,16 @@ font-family: Lucida Console;
 }
 #play{
   position: absolute;
-  margin-top: 10%;
+  margin-top: 26%;
+  width: 150px;
+  height: 80px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  border-radius: 10%;
+ font-family: Lucida Console;
 }
 
 
