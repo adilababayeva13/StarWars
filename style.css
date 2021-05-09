@@ -97,7 +97,7 @@ font-family: Lucida Console;
   height: 80px;
   border: none;
   outline: none;
-  color: #fff;
+  pointer-events: none;
   background: #111;
   cursor: pointer;
   border-radius: 10%;
