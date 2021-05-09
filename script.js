@@ -253,7 +253,7 @@ $("#saber").on("click", function(){
            $("#introBTN").css("opacity","0");
            $("#introBTN").css("pointer-events","none");
            $(".quotes").html("YOU LOST ,GAME OVER!!!");
-         
+           $("#play").css("opacity","1");
 
        }
 
@@ -276,6 +276,7 @@ $("#saber").on("click", function(){
             $("#introBTN").css("opacity","0");
             $("#introBTN").css("pointer-events","none");
             $(".quotes").html("CONGRATILATIONS!!!");
+            $("#play").css("opacity","1");
          
            }
 
@@ -412,7 +413,7 @@ $("#saber").on("click", function(){
         $("#introBTN").css("opacity","0");
         $("#introBTN").css("pointer-events","none");
         $(".quotes").html("YOU LOST ,GAME OVER!!!");
-      
+        $("#play").css("opacity","1");
 
     }
 
@@ -434,6 +435,7 @@ $("#saber").on("click", function(){
             $("#introBTN").css("opacity","0");
             $("#introBTN").css("pointer-events","none");
             $(".quotes").html("CONGRATILATIONS!!!");
+            $("#play").css("opacity","1");
           
            }
 

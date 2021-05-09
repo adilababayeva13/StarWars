@@ -46,7 +46,7 @@ font-family: Lucida Console;
 
 .glow-on-hover:before {
   content: '';
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  background: linear-gradient(45deg, #ff0000, #f16e02, #d9ff00, #03f54b, #0aaae9,blue, purple);
   position: absolute;
   top: -2px;
   left:-2px;
@@ -89,6 +89,10 @@ font-family: Lucida Console;
   0% { background-position: 0 0; }
   50% { background-position: 400% 0; }
   100% { background-position: 0 0; }
+}
+#play{
+  position: absolute;
+  margin-top: 10%;
 }
 
 
